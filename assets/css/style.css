@@ -1,0 +1,426 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Rubik', ;
+    background-color: #f7f5f2;
+    color: #333;
+}
+
+
+/* Header Styles */
+header {
+    background-color: #ff6f61; /* ფონი */
+    padding: 1em 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* პატარა ჩრდილი */
+    position: sticky; /* ფიქსირებული ზედა ნაწილი */
+    top: 0;
+    z-index: 1000;
+}
+
+
+ul li a image.logo1 {
+    width: 60px;
+    height: auto;
+    border-radius: 50%;
+    display: block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+/* Navigation Styles */
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+/* Hover Effects for Links */
+header nav ul li a:hover {
+    background-color: #ffffff; /* თეთრი ფონური ფერი */
+    color: #ff6f61; /* ტექსტი ფონს აჰყვება */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+/* Hero Section */
+#hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4em 5%;
+    background: linear-gradient(135deg, #f7f5f2 50%, #ff6f61 50%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 1em;
+    line-height: 1.4; /* ტექსტის სიმაღლე */
+    position: relative;
+    top: -20px; /* ოდნავ მაღლა აწევა */
+}
+
+
+.hero-content button {
+    background-color: #ff6f61;
+    border: none;
+    color: #fff;
+    padding: 0.8em 2em;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 270px;
+}
+
+.hero-content button:hover {
+    background-color: #e65b50;
+}
+
+.hero-image {
+    max-width: 50%;
+    position: relative;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Background setup */
+.about-us {
+    background-color: #fdf3f1; /* იგივე ფონი */
+    padding: 3em 2em;
+    text-align: center;
+}
+
+/* About Header */
+.about-header h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 2em;
+    background-color: #f8e3e7; /* ტექსტის ფონური ფერი */
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+/* Benefits Grid */
+.benefits {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2em;
+    max-width: 300px;
+}
+
+.benefit img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* სურათები მრგვალი */
+    margin-bottom: 1em;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+
+
+.benefit img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    opacity: 0; /* საწყისი გამჭვირვალობა */
+    transform: scale(0.8); /* მცირე ზომა */
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+/* ანიმაციის დაგვიანება თითოეულ ბლოკზე */
+.benefit:nth-child(1) img {
+    animation-delay: 0.3s;
+}
+
+.benefit:nth-child(2) img {
+    animation-delay: 0.6s;
+}
+
+.benefit:nth-child(3) img {
+    animation-delay: 0.9s;
+}
+
+/* Keyframe ანიმაცია */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8); /* მცირე ზომა */
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1); /* ნორმალური ზომა */
+    }
+}
+
+
+
+/* Circle Numbers */
+.circle {
+    background-color: #ff6f61;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 auto 1em auto;
+    font-size: 1.2em;
+}
+
+
+
+
+/* About Header */
+.about-header h2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+.about-header p {
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 2em;
+    background-color: #f8e3e7; /* ტექსტის ფონური ფერი */
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 8px;
+}
+
+/* Benefits Grid */
+.benefits {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.benefit {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2em;
+    max-width: 300px;
+}
+
+.benefit img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* სურათები მრგვალი */
+    margin-bottom: 1em;
+}
+
+.benefit h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.benefit p {
+    font-size: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Circle Numbers */
+.circle {
+    background-color: #ff6f61;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    margin: 0 auto 1em auto;
+    font-size: 1.2em;
+}
+
+
+
+
+.nav-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+/* ტაბლეტი (601px-1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    header {
+        padding: 0.8em 1.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+
+    .hero-content button {
+        padding: 0.7em 1.5em;
+        font-size: 0.9em;
+        width: 220px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+
+    .benefit {
+        max-width: 45%;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        font-size: 1em;
+    }
+
+    .about-header h2 {
+        font-size: 2em;
+    }
+}
+
+/* ტელეფონი (max-width: 600px) */
+@media (max-width: 600px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    header {
+        padding: 0.5em 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    .hero-content h1 {
+        font-size: 1.8em;
+        text-align: center;
+    }
+
+    .hero-content button {
+        padding: 0.6em 1em;
+        font-size: 0.8em;
+        width: 180px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .benefits {
+        flex-direction: column;
+    }
+
+    .benefit {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    .circle {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9em;
+    }
+
+    .about-header h2 {
+        font-size: 1.8em;
+    }
+
+    .about-header p {
+        font-size: 1em;
+        padding: 0.4em 0.8em;
+    }
+}

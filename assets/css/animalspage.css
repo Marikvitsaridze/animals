@@ -1,0 +1,352 @@
+/* Main Dog Picture in Section 3 */
+
+body {
+  font-family: 'rubik';
+}
+
+.maindogpicture3 {
+  position: relative;
+  width: 1208px; 
+  height: 444px; 
+  margin: 0 auto;
+  margin-bottom: 98px;
+  /* margin-top: 90px; */
+}
+
+.maindogpicture3:hover {
+  transform: scale(1.05);
+}
+
+.maindogpicture3 img {
+  position: absolute;
+  height: auto; 
+}
+
+.elipse3 {
+  width: 444px; 
+  height: 444px;
+  margin: 0px 764px 0px 0px;
+  z-index: 1;
+}
+
+.maindogpic3 {
+  width: 268px; 
+  height: 376px;
+  margin: 21px 852px 47px 88px;
+  z-index: 3;
+}
+
+.rectangle3 {
+  width: 1073px; 
+  height: 140px;
+  margin: 255px 0px 47px 125px;
+  z-index: 2;
+}
+
+.maindogpicture3 h1 {
+  position: absolute;
+  font-size: 64px; 
+  font-weight: 600;
+  margin: 140px 265px 205px 468px;
+}
+
+.maindogpicture3 p {
+  position: absolute;
+  font-size: 36px; 
+  font-weight: 400;
+  margin: 300px 121px 65px 371px;
+  z-index: 4;
+}
+
+/* responsive for the tablets */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .maindogpicture3 {
+    transform: scale(0.8); 
+    transform-origin: top left; 
+    
+  }
+}
+
+/* responsive for the mobile devices */
+
+
+@media (max-width: 600px) {
+  .maindogpicture3 {
+    transform: scale(0.49); 
+    transform-origin: top left; 
+    
+  }
+}
+
+
+
+
+/* Card Section for Animal Page */
+
+.card-section1 {
+  
+  height: Auto;
+  margin: 0 auto;
+}
+
+.cards1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(413px, 1fr));
+  max-width: 1363px;
+  margin: 0 auto;
+  gap:62px;
+  margin-bottom: 195px
+  
+}
+
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+  box-shadow: 0 0 10px 5px rgba(168, 167, 167, 0.932); 
+  transition: 0.3s ease; 
+  border-radius: 16px;
+  cursor: pointer;
+  
+}
+
+
+
+.card1:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
+  transform: scale(1.2);
+}
+
+/* ANiMATION OF THE CARDS */
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  70% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card1:hover {
+  animation: bounce 0.8s ease infinite;
+}
+
+/* CONTINUING WITH CARD SECTION */
+
+.cardinnerdiv1 {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 413px;
+
+}
+
+.card1 img,
+.card1 h2,
+.card1 p {
+  margin: 0; 
+  padding: 0; 
+}
+
+/* .card1 img {
+  width: 414px;
+  height: 295px;
+
+} */
+
+.card1 h2 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0px 0px 0px 18px;
+}
+
+.card1 p {
+  font-size: 20px;
+  font-weight: 400;
+  padding: 0px 30px 28px 18px;
+  color: gray;
+
+}
+
+/* Popup Window Styles */
+.popup-window {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  max-width: 400px;
+  z-index: 1000;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+.popup-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.popup-content p {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.popup-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#adopt-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+#adopt-btn:hover {
+  background-color: #45a049;
+}
+
+#close-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+#close-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* Overlay for Background */
+.overlay {
+  display: none; /* Initially hidden */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Show Popup and Overlay */
+.popup-window.active, .overlay.active {
+  display: block;
+}
+
+
+/* Responsive for mobile phones */
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  
+
+  .cards1 {
+    grid-template-columns: 1fr; 
+    gap: 20px; 
+}
+
+.card1 {
+    width: 90%; 
+    margin: 0 auto; 
+}
+
+.card1 img {
+    width: 100%; 
+    height: auto; 
+}
+
+  .popup-window {
+    width: 80%; 
+    padding: 15px; 
+  }
+
+  .popup-content h2 {
+    font-size: 20px; 
+  }
+
+  .popup-content p {
+    font-size: 16px; 
+  }
+
+  .popup-buttons button {
+    font-size: 14px; 
+    padding: 8px 15px;
+  }
+  .card1:last-child {
+    margin: 0 auto; 
+}
+}
+
+/* Tablets */
+@media (max-width: 1024px) and (min-width: 601px) {
+ 
+
+  .cards1 {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 25px; 
+    justify-content: center; 
+}
+
+.card1 {
+    width: auto; 
+    margin: 0 auto; 
+}
+
+.card1 img {
+    width: 100%; 
+    height: auto; 
+}
+  .popup-window {
+    width: 70%; 
+    padding: 20px; 
+  }
+
+  .popup-content h2 {
+    font-size: 22px; 
+  }
+
+  .popup-content p {
+    font-size: 18px; 
+  }
+
+  .popup-buttons button {
+    font-size: 15px; 
+    padding: 10px 20px; 
+  }
+
+  .card1:last-child {
+    flex: 1 1 100%; 
+    margin: 0 auto; 
+}
+}
+
+
+
+

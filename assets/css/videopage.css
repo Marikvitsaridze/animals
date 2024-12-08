@@ -1,0 +1,254 @@
+/* PAWS ANIMATION */
+
+.paws {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .frontpaws,.backpaws{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .paw1, .paw2, .paw3, .paw4 {
+    width: 40px;
+    height: 37px; 
+  }
+  
+
+  @keyframes movePaws {
+    0% { opacity: 0; transform: translateX(0); }
+    1.5% { opacity: 1; transform: translateX(0); }
+    3% { opacity: 0; transform: translateX(0); }
+    4.5% { opacity: 0; transform: translateX(50px); }
+    6% { opacity: 1; transform: translateX(50px); }
+    7.5% { opacity: 0; transform: translateX(50px); }
+    9% { opacity: 0; transform: translateX(100px); }
+    10.5% { opacity: 1; transform: translateX(100px); }
+    12% { opacity: 0; transform: translateX(100px); }
+    13.5% { opacity: 0; transform: translateX(150px); }
+    15% { opacity: 1; transform: translateX(150px); }
+    16.5% { opacity: 0; transform: translateX(150px); }
+    18% { opacity: 0; transform: translateX(200px); }
+    19.5% { opacity: 1; transform: translateX(200px); }
+    21% { opacity: 0; transform: translateX(200px); }
+    22.5% { opacity: 0; transform: translateX(250px); }
+    24% { opacity: 1; transform: translateX(250px); }
+    25.5% { opacity: 0; transform: translateX(250px); }
+    27% { opacity: 0; transform: translateX(300px); }
+    28.5% { opacity: 1; transform: translateX(300px); }
+    30% { opacity: 0; transform: translateX(300px); }
+    31.5% { opacity: 0; transform: translateX(350px); }
+    33% { opacity: 1; transform: translateX(350px); }
+    34.5% { opacity: 0; transform: translateX(350px); }
+    36% { opacity: 0; transform: translateX(400px); }
+    37.5% { opacity: 1; transform: translateX(400px); }
+    39% { opacity: 0; transform: translateX(400px); }
+    40.5% { opacity: 0; transform: translateX(450px); }
+    42% { opacity: 1; transform: translateX(450px); }
+    43.5% { opacity: 0; transform: translateX(450px); }
+    45% { opacity: 0; transform: translateX(500px); }
+    46.5% { opacity: 1; transform: translateX(500px); }
+    48% { opacity: 0; transform: translateX(500px); }
+    49.5% { opacity: 0; transform: translateX(550px); }
+    51% { opacity: 1; transform: translateX(550px); }
+    52.5% { opacity: 0; transform: translateX(550px); }
+    54% { opacity: 0; transform: translateX(600px); }
+    55.5% { opacity: 1; transform: translateX(600px); }
+    57% { opacity: 0; transform: translateX(600px); }
+    58.5% { opacity: 0; transform: translateX(650px); }
+    60% { opacity: 1; transform: translateX(650px); }
+    61.5% { opacity: 0; transform: translateX(650px); }
+    63% { opacity: 0; transform: translateX(700px); }
+    64.5% { opacity: 1; transform: translateX(700px); }
+    66% { opacity: 0; transform: translateX(700px); }
+    67.5% { opacity: 0; transform: translateX(750px); }
+    69% { opacity: 1; transform: translateX(750px); }
+    70.5% { opacity: 0; transform: translateX(750px); }
+    72% { opacity: 0; transform: translateX(800px); }
+    73.5% { opacity: 1; transform: translateX(800px); }
+    75% { opacity: 0; transform: translateX(800px); }
+    76.5% { opacity: 0; transform: translateX(850px); }
+    78% { opacity: 1; transform: translateX(850px); }
+    79.5% { opacity: 0; transform: translateX(850px); }
+    81% { opacity: 0; transform: translateX(900px); }
+    82.5% { opacity: 1; transform: translateX(900px); }
+    84% { opacity: 0; transform: translateX(900px); }
+    85.5% { opacity: 0; transform: translateX(950px); }
+    87% { opacity: 1; transform: translateX(950px); }
+    88.5% { opacity: 0; transform: translateX(950px); }
+    90% { opacity: 0; transform: translateX(1000px); }
+    91.5% { opacity: 1; transform: translateX(1000px); }
+    93% { opacity: 0; transform: translateX(1000px); }
+    94.5% { opacity: 0; transform: translateX(1050px); }
+    96% { opacity: 1; transform: translateX(1050px); }
+    97.5% { opacity: 0; transform: translateX(1050px); }
+    99% { opacity: 0; transform: translateX(1100px); }
+    100% { opacity: 1; transform: translateX(1100px); }
+}
+
+  
+  .paw1 {
+    animation: movePaws 25s infinite linear;
+    animation-delay:0.6s ;
+  }
+  
+  .paw2 {
+    animation: movePaws 25s infinite linear;
+    animation-delay: 0.2s; 
+  }
+  
+  .paw3 {
+    animation: movePaws 25s infinite linear; 
+  }
+  
+  .paw4 {
+    animation: movePaws 25s infinite linear;
+    animation-delay: 0.4s; 
+  }
+
+
+
+/* SECTION THREE */
+
+.section3 {
+    background-color: #971c83;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.thirdsection {
+    display: flex;
+    margin: 0 auto;
+    gap: 300px;
+    max-width: 1200px;
+    height: 200px;
+    justify-content: center;
+}
+
+.numberofcats {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+       
+}
+
+.number3 {
+    font-size: 50px;
+    color: white;
+}
+
+.bednieripiso {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 0px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .thirdsection {
+        gap: 100px; 
+    }
+
+    .number3 {
+        font-size: 40px; 
+    }
+
+    .bednieripiso {
+        font-size: 25px;
+    }
+}
+
+/* Responsive styles for mobile phones */
+@media (max-width: 600px) {
+    .thirdsection {
+        flex-direction: column; 
+        gap: 20px; 
+        height: auto; 
+    }
+
+    .number3 {
+        font-size: 30px; 
+    }
+
+    .bednieripiso {
+        font-size: 20px; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+/* VIDEO SECTION */
+
+
+.videodiv {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    max-width: 1600px;
+    align-items: center;
+}
+
+.videodescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.videodescription h1 {
+    color: #ff6f61;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 1024px) and (min-width: 601px) {
+    .videodiv {
+        flex-direction: column; 
+        gap: 20px; 
+        align-items: center; 
+        padding: 20px; 
+    }
+
+    .videodescription h1 {
+        font-size: 1.5rem; 
+        text-align: center; 
+    }
+
+    .videodescription p {
+        font-size: 1rem; 
+        text-align: center; 
+    }
+
+    .video1 video {
+        width: 80%; 
+    }
+}
+
+/* Responsive styles for mobile phones  */
+@media (max-width: 600px) {
+    .videodiv {
+        flex-direction: column; 
+        gap: 10px; 
+        align-items: center; 
+        padding: 10px; 
+    }
+
+    .videodescription h1 {
+        font-size: 1.2rem; 
+        text-align: center; 
+    }
+
+    .videodescription p {
+        font-size: 0.9rem; 
+        text-align: center; 
+    }
+
+    .video1 video {
+        width: 100%; 
+    }
+}
